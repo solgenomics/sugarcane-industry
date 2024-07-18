@@ -3,16 +3,16 @@ version: "3.7"
 services:
   breedbase:
     environment:
-      PGHOST: bb_db
-      PGDATABASE: breedbase
+      PGHOST: db9.sgn.cornell.edu
+      PGDATABASE: cxgn_sugarcane_florida
       PGPASSWORD: postgres
       PGUSER: postgres
     image: breedbase/breedbase:latest
-    depends_on:
-      - bb_db
-    container_name: bb_web
+    #depends_on:
+    #  -
+    container_name: breedbase_web_sugarcane_industry
     ports:
-      - 8099:8080
+      - 8811:8080
     volumes:
       - webdata:/home/production/volume
       - type: bind
@@ -29,17 +29,17 @@ services:
         target: /etc/crontab
       - type: bind
         source: bash_history
-        target: /root/.bash_history
+        target: /home/production/.bash_history
 
-  bb_db:
-    image: breedbase/pg:latest
-    container_name: bb_db
-    volumes:
-      - dbdata:/var/lib/postgresql/data
+#  breedbase_db_subarcane:
+#    image: breedbase/pg:latest
+#    container_name: breedbase_db
+#    volumes:
+#      - dbdata:/var/lib/postgresql/data
 
 volumes:
   webdata:
-  dbdata:
+#  dbdata:
 
 
 

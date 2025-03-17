@@ -2,11 +2,11 @@ version: "3.7"
 
 services:
   breedbase:
-    environment:
-      PGHOST: db9.sgn.cornell.edu
-      PGDATABASE: cxgn_sugarcane_florida
-      PGPASSWORD: postgres
-      PGUSER: postgres
+#    environment:
+#      PGHOST: db9.sgn.cornell.edu
+#      PGDATABASE: cxgn_sugarcane_florida
+#      PGPASSWORD: sol@ley!
+#      PGUSER: web_usr
     image: breedbase/breedbase:latest
     #depends_on:
     #  -
@@ -19,7 +19,7 @@ services:
         source: empty_db_without.test_users.sql
         target: /home/production/empty_dump.sql
       - type: bind
-        source: sgn_local.conf
+        source: /home/production/sgn_local_confs/sugarcane_industry/sgn_local.conf 
         target: /home/production/cxgn/sgn/sgn_local.conf
       - type: bind
         source: db_dumps

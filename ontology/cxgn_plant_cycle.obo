@@ -4,7 +4,7 @@ date: 07:01:2020 03:00
 saved-by: sgn
 default-namespace: cxgn_plant_cycle
 remark: none
-ontology: cxgn_plant_cycle
+ontology: PLANT_CYCLE
 
 [Term]
 id: PLANT_CYCLE:0000001

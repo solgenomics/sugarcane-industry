@@ -1619,6 +1619,14 @@ synonym: "Moisture is measured in field using a handheld micro-NIR (Viavi)” RE
 relationship: VARIABLE_OF SUGARCANE:0000000 ! Sugarcane Trait Ontology
 
 [Term]
+id: SUGARCANE:0000193
+name: Sucrose, mNIR - Measurement - percent
+namespace: sugarcane_trait
+def: "" []
+synonym: "Sucrose is measured in field using a handheld micro-NIR (Viavi)” RELATED []
+relationship: VARIABLE_OF SUGARCANE:0000000 ! Sugarcane Trait Ontology
+
+[Term]
 id: SUGARCANE:0000194
 name: Pol, mNIR - Measurement - degrees Z
 namespace: sugarcane_trait

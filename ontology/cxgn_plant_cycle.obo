@@ -115,3 +115,19 @@ name: Plant Cane
 synonym: "plant_cane" EXACT []
 def: "Plant cane phase." []
 is_a: PLANT_CYCLE:0000001
+
+[Term]
+id: PLANT_CYCLE:0000081
+name: Cycle 1 harvest data
+synonym: "C1hvst" EXACT []
+def: "Plant cane phase." []
+is_a: PLANT_CYCLE:0000001
+
+[Term]
+id: PLANT_CYCLE:0000082
+name: Cycle 2 harvest data
+synonym: "C2hvst" EXACT []
+def: "Plant cane phase." []
+is_a: PLANT_CYCLE:0000001
+
+

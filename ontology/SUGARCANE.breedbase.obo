@@ -1638,8 +1638,18 @@ relationship: VARIABLE_OF SUGARCANE:0000000 ! Sugarcane Trait Ontology
 id: SUGARCANE:0000195
 name: Plot Weight, subplot - Measurement - lbs
 namespace: sugarcane_trait
-def: "Subplot (row) weight is measured with a weigh wagon and recorded in lbs" []
+def: "Subplot (row) weight is measured with a weigh wagon and recorded in lbs. Note: no correction factor is applied." []
 synonym: "” RELATED []
+relationship: VARIABLE_OF SUGARCANE:0000000 ! Sugarcane Trait Ontology
+
+[Term]
+id: SUGARCANE:0000196
+name: Tassel Count
+namespace: sugarcane_trait
+def: "Inventory of emerged tassels for parents on crossing cart, can lines, or in nursery plot recorded on a per-plot basis. No specific sex is recorded." []
+synonym: "Number Flowering Tassels" RELATED []
+synonym: "Tassel Count" RELATED []
+xref: breedinginsight.org:12ca06a5-cc9f-4080-9dfa-1730e50af5ff
 relationship: VARIABLE_OF SUGARCANE:0000000 ! Sugarcane Trait Ontology
 
 [Typedef]

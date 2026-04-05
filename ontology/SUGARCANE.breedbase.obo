@@ -1652,6 +1652,22 @@ synonym: "Tassel Count" RELATED []
 xref: breedinginsight.org:12ca06a5-cc9f-4080-9dfa-1730e50af5ff
 relationship: VARIABLE_OF SUGARCANE:0000000 ! Sugarcane Trait Ontology
 
+[Term]
+id: SUGARCANE:0000197
+name: HeavyRust
+namespace: sugarcane_trait
+def: "Presence of heavy rust is scored as true or false" []
+synonym: "” RELATED []
+relationship: VARIABLE_OF SUGARCANE:0000000 ! Sugarcane Trait Ontology
+
+[Term]
+id: SUGARCANE:0000198
+name: OverallRating
+namespace: sugarcane_trait
+def: "Overall early stage evaluation rating where True is 'pass' and False is 'fail'" []
+synonym: "” RELATED []
+relationship: VARIABLE_OF SUGARCANE:0000000 ! Sugarcane Trait Ontology
+
 [Typedef]
 id: VARIABLE_OF
 name: VARIABLE_OF
